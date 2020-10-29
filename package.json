@@ -1,0 +1,16 @@
+{
+  "name": "rust-wasm-demo",
+  "version": "1.0.0",
+  "description": "A simple demo showing how to set up Rust/WASM with PNPM.",
+  "scripts": {
+    "init": "pushd packages/demo-rust && wasm-pack build && popd",
+    "preinstall": "npx only-allow pnpm",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HarryGifford/rust-wasm-demo.git"
+  },
+  "author": "Harry Gifford",
+  "license": "MIT"
+}
