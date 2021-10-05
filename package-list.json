@@ -1,0 +1,7 @@
+{
+  "packages": [
+    "packages/my-rust-lib",
+    "packages/my-ts-lib",
+    "packages/my-webpack-app"
+  ]
+}

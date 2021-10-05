@@ -1,16 +1,23 @@
 {
-  "name": "rust-wasm-demo",
-  "version": "1.0.0",
-  "description": "A simple demo showing how to set up Rust/WASM with PNPM.",
-  "scripts": {
-    "init": "pushd packages/demo-rust && wasm-pack build && popd",
-    "preinstall": "npx only-allow pnpm",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "name": "@sr/rust-wasm-demo",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "license": "MIT",
+  "description": "An example showing how to integrate Rust into a web mono-repo.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/HarryGifford/rust-wasm-demo.git"
   },
-  "author": "Harry Gifford",
-  "license": "MIT"
+  "scripts": {
+    "build": "node ./bin/build.mjs build",
+    "clean": "node ./bin/build.mjs clean",
+    "preinstall": "npx -y only-allow pnpm"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "typescript": "^4.4.3"
+  },
+  "packageManager": "pnpm"
 }

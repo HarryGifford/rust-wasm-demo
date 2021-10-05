@@ -1,0 +1,10 @@
+{
+  "search.exclude": {
+    "**/dist": true
+  },
+  "rust-analyzer.linkedProjects": [
+    "packages/my-rust-lib/Cargo.toml",
+    "packages/my-webpack-app/Cargo.toml"
+  ],
+  "rust-analyzer.experimental.procAttrMacros": true
+}

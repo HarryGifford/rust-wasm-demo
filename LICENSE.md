@@ -1,4 +1,4 @@
-Copyright (c) 2020 Harry Gifford
+Copyright (c) 2018 Harry Gifford <harrygifford92@outlook.com>
 
 Permission is hereby granted, free of charge, to any
 person obtaining a copy of this software and associated

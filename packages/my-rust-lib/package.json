@@ -1,0 +1,15 @@
+{
+  "name": "@sr/my-rust-lib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./pkg/index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "wasm-pack build --mode no-install --out-name index",
+    "clean": "rimraf bin pkg target"
+  },
+  "author": "",
+  "license": "ISC"
+}

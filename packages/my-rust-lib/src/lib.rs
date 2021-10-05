@@ -9,11 +9,21 @@ use wasm_bindgen::prelude::*;
 static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
 
 #[wasm_bindgen]
-extern {
-    fn alert(s: &str);
+extern "C" {
+  fn alert(s: &str);
 }
 
 #[wasm_bindgen]
 pub fn greet() {
-    alert("Hello, demo-rust!");
+  alert("Hello, my-rust-lib!");
+}
+
+/** Computes the nth fibonacci number. */
+#[wasm_bindgen]
+pub fn fib(n: i32) -> i32 {
+  if n < 2 {
+    n
+  } else {
+    fib(n - 1) + fib(n - 2)
+  }
 }
